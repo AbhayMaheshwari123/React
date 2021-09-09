@@ -10,11 +10,13 @@ import Abc from './Components/Bind Event Handler';
 import ParentComponent from './Components/ParentComponent';
 import FormHandling from './Components/FormHandling';
 import ParentComp from './Components/ParentComp';
-import RefsDemo from './Refsdemo';
+import RefsDemo from './Components/Refsdemo';
+import { Userprovider } from './Components/userContext';
+import ComponentD from './Components/ComponentD';
 function App() {
   return (
     <div className="App">
-      {/* <Greet />
+      <Greet />
       <Welcome />
       <Hello />
       <Exm name='Krishn' ans='fine'>
@@ -34,8 +36,11 @@ function App() {
       <ParentComponent></ParentComponent>
       <FormHandling></FormHandling>
 
-      <ParentComp></ParentComp> */}
+      <ParentComp></ParentComp>
       <RefsDemo/>
+      <Userprovider value="Abhay">
+          <ComponentD></ComponentD>
+      </Userprovider>
     </div>
   );
 }
